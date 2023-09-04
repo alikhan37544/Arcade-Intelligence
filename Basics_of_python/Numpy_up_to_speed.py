@@ -113,3 +113,57 @@ print("The sorted array is: ", arr15)
 
 # Reversing a numpy array
 arr16 = np.array([1, 2, 3, 4, 5, 6])
+print("The array is: ", arr16)
+print("The reversed array is: ", np.flip(arr16))
+
+# Array concatenations using stack
+arr17 = np.array([1, 2, 3])
+arr18 = np.array([4, 5, 6])
+print("The first array is: ", arr17)
+print("The second array is: ", arr18)
+arr19 = np.stack((arr17, arr18))
+print("The stacked array is: ", arr19)
+
+# Array concatenations using concatenate
+arr20 = np.array([1, 2, 3])
+arr21 = np.array([4, 5, 6])
+print("The first array is: ", arr20)
+print("The second array is: ", arr21)
+arr22 = np.concatenate((arr20, arr21))
+print("The concatenated array is: ", arr22)
+
+# Reshaping using numpy arrays
+arr23 = np.array([[1, 2, 3], [4, 5, 6]])
+print("The array is: ", arr23)
+print("The shape of the array is: ", arr23.shape)
+arr24 = arr23.reshape(3, 2)
+print("The reshaped array is: ", arr24)
+print("The shape of the array is: ", arr24.shape)
+
+# Transposing using numpy arrays
+arr25 = np.array([[1, 2, 3], [4, 5, 6]])
+print("The array is: ", arr25)
+print("The shape of the array is: ", arr25.shape)
+arr26 = arr25.transpose()
+print("The transposed array is: ", arr26)
+print("The shape of the array is: ", arr26.shape)
+
+# Splitting using numpy arrays
+arr27 = np.array([1, 2, 3, 4, 5, 6])
+print("The array is: ", arr27)
+arr28 = np.split(arr27, 3)
+print("The splitted array is: ", arr28)
+
+# Searching using numpy arrays
+arr29 = np.array([1, 2, 3, 4, 5, 6])
+print("The array is: ", arr29)
+print("The index of 3 in the array is: ", np.where(arr29 == 3))
+
+# Filtering using numpy arrays
+arr30 = np.array([1, 2, 3, 4, 5, 6])
+print("The array is: ", arr30)
+print("The elements greater than 3 in the array are: ", arr30[arr30 > 3])
+
+
+
+
