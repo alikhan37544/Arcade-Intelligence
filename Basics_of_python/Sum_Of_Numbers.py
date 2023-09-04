@@ -1,6 +1,9 @@
-# Python program to find out the sum of first n numbers
-user_input = int(input("Enter the number to find the sum of: "))
-sum = 0
-for i in range(1, user_input + 1):
-    sum += i
-print("The sum of first " + str(user_input) + " numbers is: " + str(sum))
+# Python program to find out the sum of 2 given numbers:
+
+# Input 2 numbers from the user:
+num1 = int(input("Enter the first number: "))
+num2 = int(input("Enter the second number: "))
+# Calculate the sum of the 2 numbers:
+sum = num1 + num2
+# Print the sum of the 2 numbers:
+print("The sum of the 2 numbers is: ", sum)
